@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Set the background color for the page */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Style the header links */
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Style the main section */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style the table headings */
+th {
+  text-align: left;
+  background-color: #ffffff;
+  color: #fff;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+/* Style the table rows */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the table cells */
+td {
+  padding: 10px;
+}
+
+/* Style the status column */
+td.status {
+  font-weight: bold;
+}
+
+/* Style the "Open" status */
+td.status.open {
+  color: #ff6600;
+}
+
+/* Style the "In Progress" status */
+td.status.in-progress {
+  color: #0066ff;
+}
+
+/* Style the "Resolved" status */
+td.status.resolved {
+  color: #009933;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Tracking Issues</h1>
+	<header>
+        <h1>Student Issues System</h1>
+        <nav>
+            <ul>
+                <li><a href="issues-report.html">Issues Report</a></li>
+				<li><a href="student-profile.html">Student profile</a></li>
+                <li><a href="tracking-issues.html">Tracking Issues</a></li>
+                <li><a href="integration.html">Integration</a></li>
+                <li><a href="analysis-report.html">Analysis and Report System</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Issue ID</th>
+                <th>Title</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Cannot login to the student portal</td>
+                <td>Resolved</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Grade calculation error</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Cannot access the course material</td>
+                <td>Open</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

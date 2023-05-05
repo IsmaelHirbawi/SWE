@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Report Issue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Issues System</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="issues-report.html">Issues Report</a></li>
+                <li><a href="student-profile.html">Student profile</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="tracking-issues.html">Tracking Issues</a></li>
+                <li><a href="integration.html">Integration</a></li>
+                <li><a href="analysis-report.html">Analysis and Report System</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <label>Title:</label>
+        <input type="text" name="title" required>
+
+        <label>Description:</label>
+        <textarea name="description" required></textarea>
+
+        <button type="submit">Report Issue</button>
+    </form>
+
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const title = form.querySelector('input[name="title"]').value;
+            const description = form.querySelector('textarea[name="description"]').value;
+
+            if (title === '' || description === '') {
+                alert('Please fill in all fields.');
+            } else {
+                alert('Issue reported successfully!');
+                form.reset();
+            }
+        });
+    </script>
+</body>
+</html>
